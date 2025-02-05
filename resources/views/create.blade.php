@@ -1,30 +1,22 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>library</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
-</head>
-<body>
-    <h1> create a new book</h1>
-    <form action="/books/store"method="post">
-        @csrf
-        <label for="title">Title</label>
-        <input type="text" name="name">
+@extends('layout.master')
 
-        <label for="description">description</label>
-        <textarea name="description"></textarea>
+@section('content')
+<div class="container">
+    <div class="create-form">
+        <h2>Create a New Book</h2>
+        <form action="/books/store" method="post">
+            @csrf
+            <label for="name">Title</label>
+            <input type="text" name="name" id="name" required>
 
-        <label for="price">price</label>
-        <input type="number" name="price">
+            <label for="description">Description</label>
+            <textarea name="description" id="description" required></textarea>
 
-        <input type="submit" value="create book">
+            <label for="price">Price</label>
+            <input type="number" name="price" id="price" required>
 
-
-
-    </form>
-</body>
-</html>
+            <button type="submit" class="btn-submit">Create Book</button>
+        </form>
+    </div>
+</div>
+@endsection
