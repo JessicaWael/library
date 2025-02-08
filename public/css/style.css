@@ -200,4 +200,37 @@ h1 {
 }
 
 
+  #nav-header a.nav-link {
+    color: white !important; 
+  }
+
+  #nav-header a.nav-link:hover {
+    color: #f0f0f0; 
+  }
+
+  #nav-header .offcanvas-title, 
+  #nav-header .btn-close {
+    color: white; 
+  }
+  .bsb-sidebar-1 {
+    color: #fff; 
+  }
+  
+  .bsb-sidebar-1 a,
+  .bsb-sidebar-1 .nav-link-text,
+  .bsb-sidebar-1 h6 {
+    color: #fff !important; 
+  }
+  
+  .bsb-sidebar-1 a:hover,
+  .bsb-sidebar-1 .nav-link:hover {
+    color: #ccc !important; 
+  }
+  
+  .bsb-sidebar-1 .nav-link-icon {
+    color: #fff !important; 
+  }
+
+
+
 
